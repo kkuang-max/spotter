@@ -1,4 +1,4 @@
-# SetFlow: prototype
+# Spotter: prototype
 
 A shared iPad station for single-arm bicep curls. You tap in, the camera counts your reps and sets on the device and shows only an abstract figure, you enter weight once, you tap out, and you see your history on your phone.
 

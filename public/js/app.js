@@ -62,7 +62,7 @@ function renderIdle() {
   app.className = 'screen idle';
   app.innerHTML = `
     <header class="station-head">
-      <div class="brand">SetFlow</div>
+      <div class="brand">Spotter</div>
       <div class="station-id">Station 1 · Single-arm bicep curl</div>
     </header>
     <section class="idle-main">
@@ -72,7 +72,7 @@ function renderIdle() {
       </button>
       <div class="idle-copy">
         <h1>Tap your phone to start</h1>
-        <p>SetFlow counts your reps and sets so you don't have to log them. The camera turns on only after you say yes.</p>
+        <p>Spotter counts your reps and sets so you don't have to log them. The camera turns on only after you say yes.</p>
         <div class="sim-block">
           <div class="sim-label"><span class="tag sim">SIMULATED NFC</span> Choose who's tapping in</div>
           <div class="member-row">
@@ -128,7 +128,7 @@ function renderConsent() {
   app.className = 'screen consent';
   app.innerHTML = `
     <header class="station-head">
-      <div class="brand">SetFlow</div>
+      <div class="brand">Spotter</div>
       <div class="who">Hi, ${esc(S.user.name)}</div>
     </header>
     <section class="consent-main">
@@ -169,7 +169,7 @@ function renderSetup(midSession = false) {
   app.className = 'screen setup';
   app.innerHTML = `
     <header class="station-head">
-      <div class="brand">SetFlow</div>
+      <div class="brand">Spotter</div>
       <div class="who">${esc(S.user.name)}</div>
     </header>
     <section class="setup-main">
@@ -498,7 +498,7 @@ function checkOut(auto = false) {
   app.className = 'screen summary';
   app.innerHTML = `
     <header class="station-head">
-      <div class="brand">SetFlow</div>
+      <div class="brand">Spotter</div>
       <div class="who">${auto ? 'Checked out automatically after 3 min idle' : 'Checked out'}</div>
     </header>
     <section class="summary-main">
@@ -557,7 +557,7 @@ function renderHistory(userId) {
     <section class="h-wrap">
       <header class="h-head">
         <div>
-          <div class="brand small">SetFlow</div>
+          <div class="brand small">Spotter</div>
           <h1>${esc(u.name)}'s curls</h1>
         </div>
         <a class="link" href="#">Station</a>
@@ -603,7 +603,7 @@ function renderHistory(userId) {
     const blob = new Blob([rows.map((r) => r.join(',')).join('\n')], { type: 'text/csv' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `setflow-${u.name.toLowerCase()}.csv`;
+    a.download = `spotter-${u.name.toLowerCase()}.csv`;
     a.click();
     URL.revokeObjectURL(a.href);
   });

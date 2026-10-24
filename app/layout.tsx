@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SetFlow",
+  title: "Spotter",
   description: "Low-interruption workout tracking station",
 };
 

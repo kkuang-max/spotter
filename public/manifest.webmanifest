@@ -1,6 +1,6 @@
 {
-  "name": "SetFlow Station",
-  "short_name": "SetFlow",
+  "name": "Spotter Station",
+  "short_name": "Spotter",
   "start_url": "./",
   "display": "fullscreen",
   "orientation": "landscape",
