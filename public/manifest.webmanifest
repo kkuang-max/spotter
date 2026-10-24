@@ -1,0 +1,9 @@
+{
+  "name": "SetFlow Station",
+  "short_name": "SetFlow",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0f100d",
+  "theme_color": "#0f100d"
+}
